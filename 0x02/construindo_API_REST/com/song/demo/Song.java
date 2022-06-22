@@ -6,8 +6,7 @@ import lombok.Setter;
 import java.util.Objects;
 import java.util.Optional;
 
-@Getter
-@Setter
+
 public class Song {
 
      private Integer id;
@@ -26,5 +25,56 @@ public class Song {
      @Override
      public int hashCode() {
           return Objects.hash(id);
+     }
+
+     public Integer getId() {
+          return id;
+     }
+
+     public void setId(Integer id) {
+          this.id = id;
+     }
+
+     public String getNome() {
+          return nome;
+     }
+
+     public void setNome(String nome) {
+          this.nome = nome;
+     }
+
+     public String getArtista() {
+          return artista;
+     }
+
+     public void setArtista(String artista) {
+          this.artista = artista;
+     }
+
+     public String getAlbum() {
+          return album;
+     }
+
+     public void setAlbum(String album) {
+          this.album = album;
+     }
+
+     public String getAnoLancamento() {
+          return anoLancamento;
+     }
+
+     public void setAnoLancamento(String anoLancamento) {
+          this.anoLancamento = anoLancamento;
+     }
+
+     @Override
+     public String toString() {
+          return "Song{" +
+                  "id=" + id +
+                  ", nome='" + nome + '\'' +
+                  ", artista='" + artista + '\'' +
+                  ", album='" + album + '\'' +
+                  ", anoLancamento='" + anoLancamento + '\'' +
+                  '}';
      }
 }
