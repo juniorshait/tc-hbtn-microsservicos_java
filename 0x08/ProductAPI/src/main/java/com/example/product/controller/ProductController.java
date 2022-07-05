@@ -48,14 +48,14 @@ public class ProductController {
 
     @ApiOperation(value = "- Responsável por atualizar um produto.")
     @ApiResponse(code = 14 , message = "No information has been updated. The new information is the same as recorded in the database.")
-    @PutMapping(path = "/updateSong", consumes = "application/json", produces = "application/json")
+    @PutMapping(path = "/updateProduct", consumes = "application/json", produces = "application/json")
     public void updateProduct(@RequestBody Product product) {
         repository.updateProduct(product);
     }
 
     @ApiOperation(value = "- Responsável por remover um produto.")
     @ApiResponse(code = 13 , message = "User not allowed to remove a product from this category.")
-    @DeleteMapping(path = "/removeSong", consumes = "application/json", produces = "application/json")
+    @DeleteMapping(path = "/removeProduct", consumes = "application/json", produces = "application/json")
     public void removeProduct(@RequestBody Product product) {
         repository.removeProduct(product);
     }
