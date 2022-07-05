@@ -22,7 +22,7 @@ public class ProductController {
     @ApiOperation(value = "- Responsável por retornar uma mensagem de boas vindas.")
     @GetMapping(value = "/welcome")
     public String welcome() {
-        return "BEM VINDO À PRODUCT REST API";
+        return "BEM VINDO À PRODUCT REST API.";
     }
 
     @ApiOperation(value = "- Responsável por retornar uma lista de produtos.")
