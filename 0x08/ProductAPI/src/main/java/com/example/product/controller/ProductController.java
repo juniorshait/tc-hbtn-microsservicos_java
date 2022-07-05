@@ -56,7 +56,7 @@ public class ProductController {
     @ApiOperation(value = "- Responsável por remover um produto.")
     @ApiResponse(code = 13 , message = "User not allowed to remove a product from this category.")
     @DeleteMapping(path = "/removeSong", consumes = "application/json", produces = "application/json")
-    public void removeProductById(@RequestBody Product product) {
+    public void removeProduct(@RequestBody Product product) {
         repository.removeProduct(product);
     }
 
